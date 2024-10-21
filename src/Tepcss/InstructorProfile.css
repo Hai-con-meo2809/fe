@@ -1,0 +1,72 @@
+.instructor_profile__container {
+    font-family: Arial, sans-serif;
+    /* max-width: 600px; */
+    margin: 0 auto;
+    padding: 20px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-top: 5\20px;
+    margin-right: 700px;
+    width: 70%;
+  }
+  
+  .instructor_profile__title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .instructor_profile__name {
+    font-size: 28px;
+    color: #6200ee;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  
+  .instructor_profile__subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-top: 0;
+  }
+  
+  .instructor_profile__image-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px auto;
+  }
+  
+  .instructor_profile__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .instructor_profile__stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .instructor_profile__stat-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+  }
+  
+  .instructor_profile__icon {
+    margin-right: 5px;
+    color: #6200ee;
+  }
+  
+  .instructor_profile__stat-text {
+    font-size: 14px;
+  }
+  
+  .instructor_profile__description {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }

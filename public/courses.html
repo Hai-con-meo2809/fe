@@ -1,0 +1,235 @@
+<html>
+ <head>
+  <title>
+   Tin nhắn
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 300px;
+            background-color: #fff;
+            border-right: 1px solid #ddd;
+            padding: 20px;
+        }
+        .sidebar h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .sidebar p {
+            margin: 0;
+            color: #666;
+        }
+        .sidebar .search-bar {
+            display: flex;
+            margin-top: 20px;
+        }
+        .sidebar .search-bar input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px 0 0 4px;
+        }
+        .sidebar .search-bar button {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-left: 0;
+            background-color: #fff;
+            border-radius: 0 4px 4px 0;
+        }
+        .sidebar .message-list {
+            margin-top: 20px;
+        }
+        .sidebar .message-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .sidebar .message-item img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .sidebar .message-item .message-info {
+            flex: 1;
+        }
+        .sidebar .message-item .message-info h2 {
+            font-size: 16px;
+            margin: 0;
+        }
+        .sidebar .message-item .message-info p {
+            margin: 0;
+            color: #666;
+        }
+        .sidebar .message-item .message-time {
+            color: #666;
+            font-size: 12px;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .content .message-header {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .content .message-header img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .content .message-header h2 {
+            font-size: 16px;
+            margin: 0;
+        }
+        .content .message-header .message-time {
+            color: #666;
+            font-size: 12px;
+            margin-left: auto;
+        }
+        .content .message-body {
+            margin-top: 20px;
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 4px;
+        }
+        .content .message-body p {
+            margin: 0;
+        }
+        .content .message-footer {
+            margin-top: auto;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+        .content .message-footer .message-actions {
+            display: flex;
+            align-items: center;
+        }
+        .content .message-footer .message-actions button {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-right: 10px;
+            border-radius: 4px;
+        }
+        .content .message-footer .message-actions button:last-child {
+            margin-right: 0;
+        }
+        .content .message-footer .message-input {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .content .message-footer .message-input input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .content .message-footer .message-input button {
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="sidebar">
+    <h1>
+     Tin nhắn
+    </h1>
+    <p>
+     Bạn có 0 tin nhắn chưa đọc.
+    </p>
+    <div class="search-bar">
+     <input placeholder="Tìm kiếm" type="text"/>
+     <button>
+      <i class="fas fa-search">
+      </i>
+     </button>
+    </div>
+    <div class="message-list">
+     <div class="message-item">
+      <img alt="Profile picture of the sender" height="40" src="https://storage.googleapis.com/a1aa/image/yO25Zx21eDzWISPKjKtM5Eeb5j4Rn0UcCfVV1ZfIQvMZw3aOB.jpg" width="40"/>
+      <div class="message-info">
+       <h2>
+        Nông Vương Phi
+       </h2>
+       <p>
+        Chào mừng bạn đến Khóa học của Phi&amp;P! Trong quá trình t...
+       </p>
+      </div>
+      <div class="message-time">
+       20 phút trước
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="content">
+    <div class="message-header">
+     <img alt="Profile picture of the sender" height="40" src="https://storage.googleapis.com/a1aa/image/yO25Zx21eDzWISPKjKtM5Eeb5j4Rn0UcCfVV1ZfIQvMZw3aOB.jpg" width="40"/>
+     <h2>
+      Nông Vương Phi
+     </h2>
+     <div class="message-time">
+      20 phút trước
+     </div>
+    </div>
+    <div class="message-body">
+     <p>
+      Chào mừng bạn đến Khóa học của Phi&amp;P! Trong quá trình tham gia khóa học, bất kỳ khi nào cần hỗ trợ về bài giảng, tài liệu,… bạn đừng ngần ngại liên hệ Phi&amp;P qua tin nhắn hoặc thông tin liên hệ ở cuối bài giảng nhé.
+     </p>
+    </div>
+    <div class="message-footer">
+     <div class="message-actions">
+      <button>
+       <i class="fas fa-bold">
+       </i>
+      </button>
+      <button>
+       <i class="fas fa-italic">
+       </i>
+      </button>
+      <button>
+       <i class="fas fa-code">
+       </i>
+      </button>
+     </div>
+     <div class="message-input">
+      <input placeholder="Xem lại phần Hỏi đáp về khóa học trước khi gửi tin nhắn mới cho giảng viên" type="text"/>
+      <button>
+       Gửi
+      </button>
+     </div>
+     <div class="message-links">
+      <a href="#">
+       Xem phần Hỏi đáp về khóa học
+      </a>
+      <a href="#">
+       Truy cập vào Trung tâm trợ giúp Udemy
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,57 @@
+.course-content {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  background-color: #333;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.course-section {
+  border-bottom: 1px solid #444;
+}
+
+.section-header {
+  padding: 15px;
+  cursor: pointer;
+  background-color: #fcfcfc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-header:hover {
+  background-color: #111;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.section-header .toggle-icon {
+  font-size: 1.2rem;
+}
+
+.section-content {
+  display: none;
+  padding: 15px;
+}
+
+.section-content.active {
+  display: block;
+}
+
+.lesson {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lesson a {
+  color: #00f;
+}
+
+.lesson-duration {
+  color: #aaa;
+}

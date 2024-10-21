@@ -1,0 +1,101 @@
+/* RatingFeedback.css */
+
+.toggle-rating {
+    font-family: Arial, sans-serif;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5; */
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  .icon-rating {
+    font-size: 24px;
+    color: #d3d3d3;
+        cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* .icon-rating:hover,
+  .icon-rating.selected {
+    color: #d4a017; 
+  }
+   */
+   .icon-ratings{
+    color: #ffd700;
+   }
+   .ratings{
+    color: #ffd700;
+
+   }
+  .rf-rating-container {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .rf-rating-container h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .rf-rating-container p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .rf-stars {
+    color: #f5a623;
+    margin-bottom: 20px;
+  }
+  
+  .rf-stars i {
+    font-size: 24px;
+  }
+  
+  .rf-feedback-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .rf-submit-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .rf-submit-button:hover {
+    background-color: #333;
+  }
+  
+  .rf-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }

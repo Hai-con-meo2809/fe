@@ -1,0 +1,141 @@
+.container {
+    width: 100%;
+    margin: 100px 40px 100px 40px;
+    font-family: Arial, sans-serif;
+    margin-top: 100px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 0.5px black solid;
+    width: 120%;
+  }
+  
+  .tabs button {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+  }
+  
+  .activeTab {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    margin-left: -20px;
+  }
+  .activeTabs {
+    
+    margin-left: -20px;
+  }
+  .form {
+    display: flex;
+    flex-direction: row;
+    width: 120%;
+  }
+  .header-form1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 100px;
+  }
+  .header-form2{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .formGroup label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+  }
+  .notetitle{
+    font-size: 10px;
+  }
+  .formGroup input,
+  .formGroup textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  .socialGroup {
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; */
+    width: 50%;
+        display: flex;
+        flex-direction: column;
+     
+  }
+  .profilePhotoSection {
+    margin-top: 20px;
+  }
+  
+  .photoPreview {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    overflow: hidden;
+  }
+  
+  .uploadInput {
+    display: none;
+  }
+  
+  .uploadButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .saveButton {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 100%;
+      padding: 0 20px;
+    }
+    
+    .socialGroup {
+      grid-template-columns: 1fr;
+    }
+    
+  }
+  

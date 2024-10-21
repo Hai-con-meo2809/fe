@@ -1,0 +1,542 @@
+.course-both {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Điều chỉnh khoảng cách giữa các phần tử */
+  width: 100%; /* Đảm bảo toàn bộ chiều rộng */
+  align-items: flex-start; /* Giữ các phần tử con theo hàng ngang */
+
+}
+
+
+.course-program-container {
+  margin: 100px 50px;
+  padding: 20px;
+  /* padding: 50px 50px 50px 50px; */
+  /* background-color: rgb(231, 31, 31); */
+  width: 65%; /* Giảm kích thước để đảm bảo tổng cộng không vượt quá 100% */
+  border-radius: 8px;
+  color: black;
+  border: 1px solid #ddd; /* Viền màu xám nhạt */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tạo bóng để viền trông nổi */
+
+}
+
+  
+  .course-program-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .course-program-tiltlebutton {
+    display: flex;
+
+  }
+  .course-program-description {
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  }
+  
+  .upload-button {
+    background-color: #4860c8;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
+  .course-section {
+    margin-bottom: 20px;
+    border: 1px solid #090909;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f7f9fa;
+  }
+  
+  .section-header {
+    font-size: 18px;
+    font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 0;
+    
+  }
+  .section-header:hover{
+    background-color: white;
+  }
+  .section-header .lecture-input{
+
+    margin-left: 15px;
+  }
+  .section-header .lecture-buttons button{
+    padding: 3px 10px;
+    margin: 0;
+    line-height: 0.5;
+    background-color: rgb(184, 34, 34);
+    color: #2D2F31;
+  }
+  .section-header .lecture-buttons{
+    margin-right: auto;
+    padding: 0;
+
+  }
+
+   .toggle-save-cancel{
+    padding: 0;
+    display: flex;
+    margin: 0;
+    gap: 20px;
+    margin: 13px;
+   }
+   .toggle-save-cancel .lecture-save-cancel{
+    border: #151515 1px solid;
+    padding: 5px 15px;
+    border-radius: 5px;
+   }
+   .lecture-save:hover{
+    background-color: #007bff;
+    color: #fff;
+   }
+   .lecture-cancel:hover{
+    background-color: red;
+    color: #fff;
+   }
+  .icon-header{
+    margin-right: auto;
+    padding-left: 18px;
+  }
+  .edit-section, .delete-section {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .lecture-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+    margin-left: 80px;
+    background-color: white;
+  }
+  
+  .lecture-item-all {
+    display: flex;
+    gap: 20px; /* Giảm khoảng cách giữa tiêu đề và input */
+    align-items: center; /* Đảm bảo các phần tử căn giữa theo chiều ngang */
+  }
+  
+  .lecture-item-all p {
+    margin: 0; /* Xóa khoảng cách mặc định của thẻ p */
+    line-height: 1.5; /* Căn chỉnh dòng cho tiêu đề */
+    font-weight: bold;
+
+  }
+  .lecture-title{
+    font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  }
+  .lecture-input {
+    padding: 5px;
+    font-size: 14px;
+    width: 300px; /* Điều chỉnh kích thước input cho phù hợp */
+    line-height: 1.5; /* Căn chỉnh dòng để phù hợp với tiêu đề */
+  height: auto; /* Đảm bảo chiều cao của input không làm thay đổi kích thước */
+  margin-top: 10px;
+  }
+
+.lecture-item-all input {
+  vertical-align: middle; /* Đảm bảo input nằm giữa theo chiều ngang */
+}
+  
+  .lecture-checkbox {
+    margin-right: 10px;
+  }
+  
+  .add-content-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    cursor: pointer;
+    color: black;
+    /* margin-left: auto; */
+  }
+  .lecture-buttons {
+    display: flex;
+    gap: 10px; /* Khoảng cách giữa các nút */
+    justify-content: flex-end; /* Đảm bảo các nút được căn về phía bên phải */
+}
+  
+  .add-lecture-button  {
+    background-color: transparent;
+    border: 1px solid #151515;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 12%;
+    text-align: left;
+    font-size: 16px;
+    color: black;
+    margin-left: 80px;
+  }
+  .add-section-button-container{
+    display: flex;
+    padding: 0;
+  }
+  .add-section-button{
+    background-color: transparent;
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 12%;
+    text-align: left;
+    font-size: 16px;
+    color: black    ;
+  }
+  .handle-submit{
+    background-color: transparent;
+    border: 1px solid #ddd;
+   
+    cursor: pointer;
+    margin-top: 10px;
+    width: 9%;
+    text-align: left;
+    font-size: 16px;
+    color: black;
+    margin-left: auto;
+  }
+  .add-course-video{
+    border: #151515 1px solid;
+    margin-left: 80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    /* border-radius: 8px; */
+  }
+  .add-course-video2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+  }
+  .add-video {
+    border: #151515 1px solid;
+    padding: 5px 0px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Thêm khoảng cách giữa icon và chữ */
+    height: auto; /* Điều chỉnh chiều cao tự động */
+
+}
+.add-video:hover .icon-video {
+  color: #151515; /* Đổi màu icon sang đen khi hover */
+  background-color: lightgray;
+
+}
+.add-video:hover {
+  background-color: lightgray;
+ 
+}
+.icon-video {
+    font-size: 20px; /* Điều chỉnh kích thước của icon */
+    color: #bbb; /* Màu xám giống mẫu */
+    padding: 0 20px;
+}
+.add-video p {
+    border-top: #151515 0.5px solid;
+    margin: 0; /* Xóa khoảng cách dư thừa phía dưới chữ */
+    padding: 0; /* Xóa padding của chữ */ 
+    font-size: 16px; /* Điều chỉnh kích thước chữ */
+
+}
+.add-course-video p{
+    font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #2D2F31;
+} 
+.add-course-spaces{
+    margin-bottom: 30px;
+}
+/* đây là phần chọn videohhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh*/
+.file-input-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-file-upload {
+  padding: 10px 150px 10px 10px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.choose-file-button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+}
+.file-uploader-container{
+  background-color: white;
+}
+.file-details {
+  margin-top: 20px;
+  display: flex; /* Đặt lại display thành block để các phần tử con nằm theo chiều dọc */
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.file-info-table {
+  width: 100%; /* Trả lại width 100% để bảng nằm vừa vặn trong container */
+  border-collapse: collapse;
+  margin: 0 auto 10px auto; /* Căn giữa bảng */
+  
+}
+
+.file-info-table th,
+.file-info-table td {
+  padding: 10px 50px 10px 50px;
+  border: 1px solid #ccc;
+}
+
+.file-info-table th {
+  background-color: #f5f5f5;
+}
+
+.processing-note {
+  font-size: 14px;
+  color: #666;
+  text-align: left; /* Đặt đoạn văn bản căn trái */
+  margin: 0 auto;
+  max-width: 80%; /* Để giới hạn độ rộng đoạn văn */
+}
+
+.replace-file {
+  color: #6b5b95;
+  text-decoration: underline;
+  cursor: pointer;
+}
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.special-course-content-container {
+  font-family: Arial, sans-serif;
+  width: 25%;
+  margin: 100px auto;
+  /* background-color: #2D2F31; */
+  padding-left: 150px;
+  font-size: 15px;
+}
+
+.special-section {
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.special-section-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #343a40;
+}
+
+.special-content-item {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  /* margin-bottom: 15px; */
+  padding: 5px 0px 5px 20px;
+  color: #3c3b3b;
+}
+
+.special-submit-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #a64bf4;
+  color: white;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.special-content-item:hover {
+  background-color: #e8ebed;
+  cursor: pointer;
+  border-left: 5px solid black; /* Thanh đen nhỏ bên trái */
+}
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+.course-overview {
+  width: 65%;
+  margin: 100px auto 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.course-overview__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.course-overview__description {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.course-overview__link {
+  color: #0073b1;
+  text-decoration: none;
+}
+
+.course-overview__link:hover {
+  text-decoration: underline;
+}
+
+.course-overview__form-group {
+  margin-bottom: 20px;
+}
+
+.course-overview__label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #343a40  ;
+}
+
+.course-overview__input,
+.course-overview__textarea,
+.course-overview__select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #3c3b3b;
+}
+
+.course-overview__textarea {
+  height: 100px;
+}
+
+.course-overview__char-count {
+  text-align: right;
+  font-size: 12px;
+  color: #666;
+}
+
+.course-overview__editor-toolbar {
+  border: 1px solid #ccc;
+  border-bottom: none;
+  padding: 5px;
+  background-color: #f1f1f1;
+}
+
+.course-overview__toolbar-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.course-overview__toolbar-button:hover {
+  color: #0073b1;
+}
+
+.course-overview__info-icon {
+  display: inline-block;
+  margin-left: 5px;
+  color: #666;
+}
+
+.course-overview__info-icon:hover {
+  color: #000;
+}
+
+.course-overview__form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.course-overview__form-row .course-overview__form-group {
+  flex: 1;
+}
+
+/* New styles */
+.course-overview__section-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.course-overview__image-placeholder {
+  width: 100%;
+  height: 300px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.course-overview__image-placeholder img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.course-overview__upload-instructions {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction:column;
+  flex-wrap:nowrap;
+padding-left: 20px;
+
+
+}
+
+.course-overview__upload-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.course-overview__file-input {
+  display: none;
+}
+
+.course-overview__upload-label {
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.course-overview__file-name {
+  font-size: 14px;
+  color: #666;
+}

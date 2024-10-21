@@ -1,0 +1,459 @@
+.course-container-tong{
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+
+}
+.course-container-unique {
+  background-color: #fff;
+  color: black;
+  padding: 20px;
+  font-family: 'Segoe UI', Roboto, Helvetica;
+  max-width: 1300px;
+  width: 55%;
+  margin: auto 50px auto 200px;
+  z-index: 1;
+}
+.course-footer-unique {
+  text-align: left;
+  background-color: #f7f3f1;
+  width: 25%;
+  margin-right: 100px;
+  height:fit-content;
+  margin-top: 20px;
+}
+
+.course-footer-unique h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.header-footer-wrapper-unique {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.course-header-unique h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+
+}
+
+.course-header-unique p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #3c3b3b;
+  margin-left: 25px;
+  font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.course-details-unique {
+  margin-top: 20px;
+
+}
+
+.course-details-unique h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.course-details-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Chia thành 2 cột đều nhau */
+  grid-auto-rows: auto;
+  gap: 10px 20px; /* Khoảng cách giữa các mục */
+}
+
+.course-details-list li {
+  display: flex;
+  align-items: flex-start;
+  color: #3c3b3b;
+  font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.course-details-unique ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.course-details-unique li {
+  margin-bottom: 5px;
+  color: #3c3b3b;
+  font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.course-content-unique {
+  margin-top: 20px;
+
+}
+.course-content-unique h1{
+color: azure;
+}
+.course-content-unique h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.course-content-unique p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.module-unique {
+  background-color: #c7c0c026;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer; /* Thêm dòng này để hiện con trỏ bàn tay */
+
+}
+
+.module-unique h1 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #2c2b2a;
+}
+
+.module-unique ul {
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 15px;
+
+}
+.list-item-effect {
+  position: relative;
+  padding-bottom: 5px; /* Để có khoảng trống cho dòng kẻ */
+  cursor: pointer; /* Để hiển thị dấu bàn tay */
+  color: #3c3b3b;
+  font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.list-item-effect::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1.5px;
+  background-color: orange;
+  transition: width 0.4s ease-out;
+
+
+}
+.list-item-effect:hover {
+  color: orange; /* Thay đổi màu chữ khi hover */
+}
+
+.list-item-effect:hover::after {
+  width: 100%; /* Khi hover, dòng kẻ mở rộng hết chiều rộng phần tử */
+  color: #e65c00;
+}
+
+.module-unique li {
+  margin-bottom: 15px;
+  color: #2c2b2a;
+  font-size: 15px;
+}
+/* Bố trí ngang hàng phần footer với header */
+
+
+.register-button-unique {
+  background-color: #ff6600;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.register-button-unique:hover {
+  background-color: #e65c00;
+}
+
+.course-footer-unique p {
+  margin: 5px 0;
+}
+
+
+/* Định dạng video và thêm hiệu ứng overlay */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  margin: auto;
+  border-radius: 15px; /* Bo góc video */
+  overflow: hidden; /* Ẩn các phần vượt ra ngoài border-radius */
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Thêm transition để tạo hiệu ứng mượt */
+
+}
+.video-wrapper:hover {
+  transform: scale(1.1);
+ 
+}
+
+/* Bo góc video */
+.video-player-custom {
+  width: 100%;
+  border-radius: 15px; /* Bo cong video */
+}
+
+/* Thêm overlay với chữ "Xem trước" */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Màu nền nửa trong suốt */
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+/* Khi video được phát, ẩn overlay */
+.plyr--playing .video-overlay {
+  opacity: 0;
+}
+
+/* Thêm nút đăng ký thân thiện */
+.register-button-unique {
+  background-color: #6a0dad; /* Màu nền */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px; /* Bo cong nút */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-button-unique:hover {
+  background-color: #7e29dd; /* Màu nền khi hover */
+}
+
+
+.price-section-unique {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  padding: 0 15px 15px 15px;
+}
+
+.price-unique {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.currency-unique {
+  font-size: 20px;
+  vertical-align: top;
+}
+
+.button-container-unique {
+  margin-top: 20px;
+}
+.buy-now-unique:hover{
+  background-color: darkgray;
+}
+
+.add-to-cart-unique, .buy-now-unique {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  /* border: 2px solid #000; */
+  text-decoration: none;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+.add-to-cart-unique {
+  background-color: #a34efc;
+  color: #fff;
+}
+
+.buy-now-unique {
+  background-color: #fff;
+  color: black;
+  padding: 10px 100px;
+}
+
+
+.heart-icon-unique {
+  display: inline-block;
+  padding: 15px;
+  font-size: 18px;
+ 
+  text-decoration: none;
+  margin: 5px;
+  vertical-align: middle;
+}
+
+.guarantee-unique {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+.icon-heart {
+  color: rgb(171, 168, 168); /* Màu bên trong là trắng */
+  border: #050505 1px solid;
+  background-color: white;
+  border-radius: 8px;
+}
+.icon-heart:hover{
+  color: red;
+  cursor: pointer;
+}
+
+.nodejs-express-course {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.nodejs-express-course__title {
+  color: #2c3e50;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.nodejs-express-course__description {
+  color: #34495e;
+  line-height: 1.6;
+}
+
+.nodejs-express-course__section-title {
+  color: #2980b9;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.nodejs-express-course__content-list,
+.nodejs-express-course__requirements-list {
+  padding-left: 20px;
+  list-style-type: disc;
+  color: #34495e;
+}
+
+.nodejs-express-course__content-list li,
+.nodejs-express-course__requirements-list li {
+  color: #34495e;
+  margin-bottom: 5px;
+}
+
+.nodejs-express-course__target-audience {
+  font-style: italic;
+  color: #7f8c8d;
+}
+
+
+.course-reviews {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+  margin: 0;
+  padding: 20px 0px 20px 0px;
+  width: 100%;
+}
+
+.course-reviews__header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.course-reviews__star-icon {
+  color: #f4c150;
+}
+
+.course-reviews__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.course-reviews__item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: calc(50% - 20px);
+  box-sizing: border-box;
+}
+
+.course-reviews__item-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.course-reviews__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.course-reviews__name {
+  font-weight: bold;
+  margin-right: auto;
+}
+
+.course-reviews__ellipsis {
+  color: #888;
+}
+
+.course-reviews__item-body {
+  margin-bottom: 10px;
+}
+
+.course-reviews__star {
+  color: #f4c150;
+}
+
+.course-reviews__item-footer {
+  display: flex;
+  align-items: center;
+}
+
+.course-reviews__thumb {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.course-reviews__thumb:hover {
+  color: #007bff;
+}
+
+.course-reviews__show-all {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}

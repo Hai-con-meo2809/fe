@@ -1,0 +1,240 @@
+.course-boths {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Điều chỉnh khoảng cách giữa các phần tử */
+  width: 100%; /* Đảm bảo toàn bộ chiều rộng */
+  align-items: flex-start; /* Giữ các phần tử con theo hàng ngang */
+
+}
+.course-list-container {
+  font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
+  /* margin-left: 20px;
+  margin-right: 20px; */
+  /* padding: 25px; */
+  width: 70%;
+background-color: white;
+  margin: 100px auto;
+  /* background-color: #2D2F31; */
+  /* padding-left: 150px; */
+  font-size: 15px;
+}
+.special-course-content-containers {
+  font-family: Arial, sans-serif;
+  width: 25%;
+  margin: 100px auto;
+  padding-left: 100px;
+  font-size: 15px;
+  
+}
+.special-course-content-containers .special-section-titles{
+  color: white;
+  background-color: #800080;
+  padding: 5px 5px;
+}
+.special-sections {
+  /* margin-bottom: 40px; */
+  align-items: center;
+}
+
+.special-section-titles {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #343a40;
+}
+
+.special-content-items {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  /* margin-bottom: 15px; */
+  padding: 5px 0px 5px 20px;
+  color: #3c3b3b;
+}
+.special-content-items:hover {
+  background-color: #e8ebed;
+  cursor: pointer;
+  border-left: 5px solid black; /* Thanh đen nhỏ bên trái */
+}
+
+.course-list-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  border: #555 1px solid;
+
+}
+
+.course-search {
+  width: 300px;
+}
+.course-newcourse{
+  margin-left: auto;
+}
+.new-course-button {
+  background-color: #d100ff;
+  color: white;
+  border: none;
+}
+
+.course-list {
+  display: flex;
+  flex-direction: column; /* Chỉnh thành hàng ngang */
+  gap: 20px;
+  /* overflow-x: auto; Tự động thêm thanh cuộn nếu có quá nhiều khóa học */
+}
+
+.course-item {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  min-width: 100%; /* Cố định chiều rộng tối thiểu cho mỗi item */
+}
+
+.course-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #f0f0f0;
+}
+
+.course-info {
+  text-align: center; /* Căn giữa nội dung */
+}
+
+.course-title {
+  margin: 0;
+  font-size: 20px;
+}
+
+.course-status {
+  color: grey;
+}
+
+.course-status span {
+  margin-left: 5px;
+}
+
+.course-progress {
+  margin-top: 10px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #e0e0e0;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #800080;
+}
+
+.dropdown .dropdown-toggle {
+  background-color: white;
+  color: rgb(10, 10, 10);
+}
+
+.custom-dropdown .dropdown-item {
+  color: white;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: darkred;
+}
+
+  .video-card {
+    
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: white;
+    max-width: 800px;
+    margin: 30px auto 30px  auto; /* Cách trên 30px, canh giữa theo chiều ngang */
+
+  }
+
+.video-card-content {
+  display: flex;
+  align-items: center;
+}
+
+.video-card-image {
+  width: 250px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.video-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.video-card-title {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+
+.video-card-description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.video-card-link {
+  font-size: 16px;
+  color: #800080;
+  text-decoration: none;
+}
+
+.video-card-link:hover {
+  text-decoration: underline;
+}
+
+/*////////////////////////////////////////////////////////////////////////*/
+.message-container-custom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  text-align: center;
+}
+
+.message-title-custom {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  align-self: flex-start; /* Đẩy tiêu đề sang trái */
+  text-align: left; /* Đảm bảo text được căn trái */
+
+}
+
+.message-content-custom {
+  text-align: center;
+}
+
+.message-image-custom {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.message-heading-custom {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.message-text-custom {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}

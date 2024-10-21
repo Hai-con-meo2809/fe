@@ -1,0 +1,161 @@
+.design-login {
+  background-image: url(https://i.pinimg.com/originals/81/df/3f/81df3f704ba55281ead0042466b293fa.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  width: 400px;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-container label {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.login-container input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.login-container button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button[type="submit"]:hover {
+  background-color: rgba(201, 209, 203, 0.8);
+  color: white;
+}
+
+.register-link {
+  padding-top: 20px;
+  color: white;
+}
+
+.login-details {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.input-groups {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.input-group{
+  display: flex;
+  flex-direction: column;
+}
+.input-group label{
+  margin-right: auto;
+}
+.remember-me {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  white-space: nowrap; /* Ngăn không cho xuống dòng */
+
+}
+
+.remember-me input {
+  margin-right: 5px;
+  margin-top: 10.5px;
+}
+
+.forgot-password {
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.forgot-password:hover {
+  text-decoration: none;
+}
+
+.toggle-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toggle-login label {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.login-icon {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.login-icon img {
+  width: 32px;
+  height: 32px;
+}
+.register-link label:hover{
+  color: blue;
+  cursor: pointer;
+}
+.password-input-wrapper {
+  position: relative;
+  /* display: flex;
+  align-items: center; */
+}
+
+/* .password-input-wrapper input {
+  flex-grow: 1;
+  padding-right: 40px; 
+} */
+
+.icon-eyes {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 20px;
+  color: black;
+  top: 13px;
+ 
+}
+

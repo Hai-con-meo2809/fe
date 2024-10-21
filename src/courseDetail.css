@@ -1,0 +1,71 @@
+/* Container chính của toàn bộ component */
+.container {
+    padding: 20px;
+    background-color: #181818;
+    color: #fff;
+  }
+  
+  /* Phần Overview */
+  .header {
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .description {
+    margin-bottom: 10px;
+  }
+  
+  .features {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .features li {
+    margin-bottom: 5px;
+  }
+  
+  /* Phần Content */
+  .courseContent {
+    margin-top: 20px;
+  }
+  
+  .sectionTitle {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .chapter {
+    margin-bottom: 20px;
+  }
+  
+  .chapterTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f05c5c;
+  }
+  
+  .lessonList {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .lessonList li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+  }
+  
+  .lessonTitle {
+    font-size: 16px;
+  }
+  
+  .lessonDuration {
+    font-size: 14px;
+    color: #ccc;
+  }
+  
