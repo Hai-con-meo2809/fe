@@ -89,7 +89,7 @@ const Body = () => {
                       </div>
                       <div className="details">
                         <div className="justify-content-between mb-20">
-                          <p className="name">{course.title}</p>
+                          <p className="name">{course.status}</p>
 
                           <p>{course.instructorName}</p>
                           <p className="name">
