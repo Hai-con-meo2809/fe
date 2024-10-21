@@ -58,7 +58,7 @@ const Body = () => {
         <div className="row justify-content-center section-title">
           <div className="col-lg-12">
             <h2>
-              Popular Courses <br />
+              Popular Courses hello<br />
               Available Right Now
             </h2>
             <p>
