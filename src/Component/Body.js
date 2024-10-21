@@ -22,7 +22,8 @@ const Body = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://comics-truyentranh.somee.com/api/GetData"
+          // "http://comics-truyentranh.somee.com/api/GetData"
+          "https://dog.ceo/api/breeds/image/random"
         );
         // const response = await axios.get('https://d11a-2402-800-6313-de3d-cccc-6e18-e5ac-8a11.ngrok-free.app/api/GetData');
 
@@ -82,7 +83,7 @@ const Body = () => {
                       <div className="thumb">
                         <img
                           className="f-img img-fluid mx-auto"
-                          src={course.thumbnailImage}
+                          src={course.message}
                           alt=""
                         />
                       </div>
