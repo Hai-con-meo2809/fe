@@ -61,6 +61,8 @@ const Body = () => {
             <h2>
               Popular Courses hello<br />
               Available Right Now
+      <img src={product.message}  width={100}
+                  height={100}/>
             </h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
